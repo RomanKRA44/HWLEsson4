@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace HWLEsson4
 {
@@ -6,7 +7,7 @@ namespace HWLEsson4
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine(Console.ReadLine().Split().Select(int.Parse).Sum());
         }
     }
 }
