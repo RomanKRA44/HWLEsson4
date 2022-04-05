@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace HWLEsson4
 {
@@ -6,15 +7,7 @@ namespace HWLEsson4
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(GetFullName("Вишневский", "Роман", "Петрович"));
-            Console.WriteLine(GetFullName("Есина", "Алена", "Ивановна"));
-            Console.WriteLine(GetFullName("Смирнова", "Илона", "Владимировна"));
-            Console.WriteLine(GetFullName("Смирнов", "Иван", "Иваныч"));
-        }
-
-        static string GetFullName(string lastName, string firstName, string patronymic)
-        {
-            return $"{lastName} {firstName} {patronymic}";
+            Console.WriteLine(Console.ReadLine().Split().Select(int.Parse).Sum());
         }
     }
 }
